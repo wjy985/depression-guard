@@ -583,7 +583,6 @@ elif menu == "📋 临床就诊参考单":
     st.markdown('<div class="hero-subtitle">聚合量表、14 天 EMA 趋势与数字表型，生成规范病程摘要，辅助门诊沟通。</div>', unsafe_allow_html=True)
 
     # 引用 HTML 报告渲染
-    from app import generate_clinical_html
     report_html = generate_clinical_html(st.session_state.assessment_result, st.session_state.history_ema, st.session_state.phenotype_history)
     
     col_a, col_b = st.columns([2, 1])
